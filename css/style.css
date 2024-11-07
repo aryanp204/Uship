@@ -1,0 +1,905 @@
+@font-face {
+   font-family: 'Montserrat';
+   src: url('../fonts/Montserrat-Black.woff2') format('woff2'),
+      url('../fonts/Montserrat-Black.woff') format('woff');
+   font-weight: 900;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: 'Montserrat';
+   src: url('../fonts/Montserrat-ExtraLight.woff2') format('woff2'),
+      url('../fonts/Montserrat-Black.woff') format('woff');
+   font-weight: 200;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: 'Montserrat';
+   src: url('../fonts/Montserrat-Bold.woff2') format('woff2'),
+      url('../fonts/Montserrat-Bold.woff') format('woff');
+   font-weight: bold;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: 'Montserrat';
+   src: url('../fonts/Montserrat-ExtraBold.woff2') format('woff2'),
+      url('../fonts/Montserrat-ExtraBold.woff') format('woff');
+   font-weight: bold;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: 'Montserrat';
+   src: url('../fonts/Montserrat-Medium.woff2') format('woff2'),
+      url('../fonts/Montserrat-Medium.woff') format('woff');
+   font-weight: 500;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: 'Montserrat';
+   src: url('../fonts/Montserrat-Regular.woff2') format('woff2'),
+      url('../fonts/Montserrat-Regular.woff') format('woff');
+   font-weight: normal;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: 'Montserrat';
+   src: url('../fonts/Montserrat-Light.woff2') format('woff2'),
+      url('../fonts/Montserrat-Light.woff') format('woff');
+   font-weight: 300;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: 'Montserrat';
+   src: url('../fonts/Montserrat-Thin.woff2') format('woff2'),
+      url('../fonts/Montserrat-Thin.woff') format('woff');
+   font-weight: 100;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: 'Montserrat';
+   src: url('../fonts/Montserrat-SemiBold.woff2') format('woff2'),
+      url('../fonts/Montserrat-SemiBold.woff') format('woff');
+   font-weight: 600;
+   font-style: normal;
+   font-display: swap;
+}
+
+/* common css */
+* {
+   margin: 0px;
+   padding: 0px;
+
+}
+
+a {
+   color: black;
+   text-decoration: none;
+   cursor: pointer;
+}
+
+body {
+   font-family: 'Montserrat';
+}
+
+.container {
+   max-width: 1350px;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+/* navbar Start */
+header {
+   position: sticky;
+   top: 0;
+   background: white;
+   padding: 14px;
+}
+
+.navBar {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+
+}
+
+.navbar {
+   display: flex;
+   align-items: center;
+   gap: 40px;
+   margin-right: 40px;
+}
+
+.navbar h3 {
+   font-weight: 600;
+   font-size: 18px
+}
+
+.search {
+   display: flex;
+   gap: 40px;
+   margin-right: 20px;
+   align-items: center;
+}
+
+.search_bar_item {
+   font-size: 14px;
+   padding: 0px 54px 0px 18px;
+   border-radius: 50px;
+   border: 1px solid;
+   padding-right: 205px;
+
+}
+
+.search button {
+   background: transparent;
+   border: none;
+   padding: 10px 20px;
+   font-size: 16px;
+   font-weight: 700;
+   transition: 0.3s ease-in;
+   border-radius: 4px;
+}
+
+.search button a:hover {
+   color: white;
+}
+
+.search button:hover {
+   background-color: black;
+
+}
+
+/* hero-start */
+.heroSection {
+   background-color: #ECF3FA;
+   display: flex;
+   align-items: center;
+   padding: 32px 80px;
+   justify-content: space-between;
+   border-radius: 4px;
+}
+
+.hero-details h1 {
+   font-size: 48px;
+   width: 68%;
+}
+
+.hero-details p {
+   font-size: 16px;
+   width: 80%;
+}
+
+.shopnow {
+   margin-top: 32px;
+   transition: 0.3s ease all;
+   cursor: pointer;
+   height: 40px;
+   padding: 0 2rem;
+   font-size: 16px;
+   font-weight: 700;
+   border-radius: 0.3rem;
+   border: 2px solid #202020;
+   color: #202020;
+   background-color: transparent;
+
+}
+
+.shopnow:hover {
+   background-color: #202020;
+   color: #ECF3FA;
+}
+
+.hero-image img {
+   max-width: 100%;
+}
+
+/* categoriesSection */
+.categories {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.categoriesSection h3 {
+   margin: 50px 0px 30px 0px;
+   font-size: 20px;
+}
+
+.categ_cart {
+   background-color: #FAF5EC;
+}
+
+.categ_image img {
+   height: 268px;
+   width: 300px;
+   padding: 10px;
+   object-fit: contain;
+}
+
+.categ_details {
+   font-size: 14px;
+   min-height: 80px;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: flex-start;
+   padding: 0 1rem;
+   font-weight: 600;
+}
+
+/* recent Start */
+.recentAdds {
+   margin-top: 50px;
+   margin-bottom: 30px;
+}
+
+.beautyPicks {
+   display: flex;
+   padding: 2rem 5rem;
+   align-items: center;
+   gap: 100px;
+   background-color: #FAF5EC;
+}
+
+.beautyPick_image img {
+   max-width: 100%;
+}
+
+.beautyPicks_details {
+   width: 80%;
+}
+
+.beautyPicks_details h2 {
+   font-size: 48px;
+   font-weight: 1000;
+}
+
+.recentAdds {
+   display: flex;
+   justify-content: center;
+   gap: 84px;
+}
+
+.recentAdds h3,
+.recentAdds h4 {
+   padding: 10px 20px;
+   transition: 0.3s ease-in-out;
+}
+
+.recentAdds h3:hover,
+.recentAdds h4:hover {
+   border-radius: 4px;
+   cursor: pointer;
+   background-color: black;
+   color: white;
+}
+
+/* footer Start */
+footer {
+   width: 100%;
+   padding: 2.6rem 0;
+   border-radius: 0.2rem;
+   margin-bottom: 2rem;
+   margin-top: 1rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: #F3F3F3;
+}
+
+
+
+li {
+   list-style-type: none;
+   cursor: pointer;
+   transition: 0.7s;
+}
+
+li:hover {
+   font-weight: 600;
+   padding-left: 10px;
+}
+
+.headFooter {
+   display: flex;
+   gap: 122px;
+   line-height: 28px;
+}
+
+input {
+   width: 96%;
+   height: 40px;
+   padding-left: 10px;
+   border-radius: 5px;
+   background-color: transparent;
+}
+
+.subscribebtn {
+   font-weight: 600;
+   width: 100%;
+   font-size: 18px;
+   padding: 10px;
+   align-items: center;
+   background: black;
+   color: white;
+   border-radius: 4px;
+   cursor: pointer;
+   transition: 0.3s ease-in-out;
+}
+
+.subscribebtn:hover {
+   background-color: transparent;
+   color: black;
+}
+
+/* Product List Page Start */
+
+.productList h1 {
+   margin: 60px 0px;
+   text-align: center;
+}
+
+.listOfProduct {
+   font-size: 18px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 50px;
+}
+
+.productFilter {
+   display: flex;
+   gap: 60px;
+   align-items: center;
+   font-size: 16px
+}
+
+.productFilter select {
+   font-size: 16px;
+   padding: 8px 180px 8px 12px;
+   border-radius: 4px;
+}
+
+.carts {
+   display: flex;
+   gap: 50px;
+   margin-top: 40px;
+}
+
+.cartDetails {
+   background-color: #F3F3F3;
+}
+
+.cartImg img {
+   padding: 6px 0px 20px 42px;
+   max-width: 72%;
+   width: 100%;
+}
+
+.cartDetail {
+   padding: 0px 0px 20px 20px;
+}
+
+p .mrp {
+   color: #B5B5B5;
+   font-weight: 400;
+}
+
+.price {
+   padding: 16px 0px 8px 0px;
+}
+
+p .off {
+   font-weight: 500;
+   color: #80BF32;
+}
+
+.loginHead {
+   display: flex;
+   text-align: center;
+   justify-content: center;
+   gap: 25px;
+   margin: 50px 0px 40px 0px;
+   font-size: 16px;
+}
+
+.loginHead p:nth-child(1) {
+   text-decoration: underline;
+   color: #a7a7a7;
+}
+
+.loginHead p i {
+   font-size: 12px;
+}
+
+.cretP {
+   text-align: center;
+   font-size: 32px;
+   color: #202020;
+   font-weight: 900;
+   margin-bottom: 40px;
+}
+
+.part1 {
+   width: 100%;
+}
+
+.part2 {
+   width: 100%;
+}
+
+.loginPage {
+   display: flex;
+   gap: 56px;
+   margin-bottom: 180px;
+}
+
+.loginHeading {
+   font-size: 20px;
+   font-weight: 500;
+}
+
+.loginPage hr {
+   margin: 20px 0px;
+}
+
+.innercontent p {
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 34px;
+}
+
+.innercontent a p {
+   margin-left: 20px;
+   transition: 0.7s ease-out;
+}
+
+.innercontent a p:hover {
+   font-weight: 600;
+   padding-left: 16px;
+}
+
+.innercontent p:nth-child(1) {
+   padding: 0px;
+}
+
+.headingP {
+   font-size: 15px;
+   margin-bottom: 20px;
+}
+
+.part2 label {
+   font-size: 16px;
+   font-weight: 500;
+   padding-bottom: 20px;
+}
+
+.createAcc {
+   margin-top: 158px;
+}
+
+.part2 input {
+   border: 1px solid grey;
+   margin: 20px 0px 30px 0px;
+}
+
+
+
+.form-section {
+   margin-bottom: 20px;
+}
+
+.form-section h2 {
+   color: #333;
+}
+
+.form-section input[type="text"],
+.form-section input[type="password"],
+.form-section select {
+   width: 100%;
+   padding: 10px;
+   margin: 5px 0 15px;
+   border: 1px solid #ccc;
+}
+
+.form-section button {
+   background-color: #4CAF50;
+   color: white;
+   padding: 10px 20px;
+   border: none;
+   cursor: pointer;
+}
+
+.form-section button:hover {
+   background-color: #45a049;
+}
+
+.registerPage hr {
+   margin: 20px 0px;
+}
+
+.nameEmail {
+   display: flex;
+   gap: 42px;
+   margin-top: 20px
+}
+
+.nameReg {
+   width: 48%;
+}
+
+.registerPage input {
+   width: 99%;
+   font-size: 16px;
+   border: 1px solid gray;
+   font-family: monospace;
+}
+
+.registerPage input {
+   margin: 20px 0px 40px 0px;
+}
+
+.registerPage select {
+   width: 100%;
+   font-size: 16px;
+   height: 47px;
+   border-radius: 4px;
+
+}
+
+.registerPage p,
+.loginInfo p {
+   font-size: 20px;
+   font-weight: 500;
+}
+
+.loginInfo {
+   margin: 40px 0px 50px 0px;
+
+}
+
+.loginInfo p {
+   font-size: 20px;
+}
+
+.registerPage label {
+   font-weight: 600;
+}
+
+.password {
+   display: flex;
+   gap: 44px;
+}
+
+.pass1 {
+   width: 48%;
+}
+
+.registerBtn {
+   width: 100%;
+   margin-top: 0px;
+}
+
+/* Contact Page Start */
+.contactIcon {
+   margin-top: 50px;
+   text-align: center;
+}
+
+.contactIcon i {
+   font-size: 60px;
+   padding: 20px;
+   color: white;
+   background-color: black;
+   border-radius: 50px;
+   margin-bottom: 20px;
+}
+
+.contactDetails {
+   margin-top: 40px;
+}
+
+.contactMain {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   width: 70%;
+   margin: auto;
+   margin-top: 20px;
+   border: 1px solid black;
+   border-radius: 4px;
+}
+
+.contactChild {
+   display: flex;
+   align-items: center;
+
+}
+
+.contactChild i {
+   font-size: 50px;
+   margin: 30px;
+}
+
+.contactBTN button {
+   margin-right: 30px;
+   font-size: 16px;
+   background: black;
+   color: white;
+   padding: 16px;
+   transition: 1s;
+   cursor: pointer;
+   border-radius: 4px;
+}
+
+.emailBtn button {
+   padding: 16px 50px;
+}
+
+.chatBtn button {
+   padding: 16px 34px;
+}
+
+.contactBTN button:hover {
+   background-color: white;
+   color: #202020;
+}
+
+.map iframe {
+   width: 100%;
+   height: 400px;
+   margin-top: 40px;
+   border-radius: 4px;
+}
+
+
+.cursor {
+   width: 20px;
+   height: 20px;
+   border-radius: 50%;
+   position: absolute;
+   transition-duration: 200ms;
+   transition-timing-function: ease-out;
+   animation: cursorAnim .5s infinite alternate;
+   pointer-events: none;
+}
+
+.cursor::after {
+   content: "";
+   width: 20px;
+   height: 20px;
+   position: absolute;
+   border: 8px solid gray;
+   border-radius: 50%;
+   opacity: .5;
+   top: -12px;
+   left: -15px;
+   animation: cursorAnim2 .5s infinite alternate;
+}
+
+@keyframes cursorAnim {
+   from {
+      transform: scale(1);
+   }
+
+   to {
+      transform: scale(.7);
+   }
+}
+
+@keyframes cursorAnim2 {
+   from {
+      transform: scale(1);
+   }
+
+   to {
+      transform: scale(.4);
+   }
+}
+
+@keyframes cursorAnim3 {
+   0% {
+      transform: scale(1);
+   }
+
+   50% {
+      transform: scale(3);
+   }
+
+   100% {
+      transform: scale(1);
+      opacity: 0;
+   }
+}
+
+.expand {
+   animation: cursorAnim3 .5s forwards;
+   border: 1px solid var(--orange);
+}
+
+/* cart page */
+.cartDesign {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 20px;
+   margin: 40px 0px;
+}
+
+.cartDesign h2 {
+   font-size: 30px;
+   font-weight: 600;
+}
+
+.cartDesign i {
+   font-size: 60px;
+
+}
+
+.productImg img {
+   height: 162px;
+
+}
+
+#hr1,
+#hr3 {
+   margin: 30px;
+}
+
+#hr1 {
+   width: 56%;
+}
+
+.products {
+   display: flex;
+   justify-content: space-between;
+   flex-direction: column;
+}
+
+.allProductHere {
+   width: 100%;
+   display: flex;
+   justify-content: space-around;
+}
+
+.productNumber select {
+   width: 110px;
+   height: 30px;
+   margin-top: 6px;
+   border-radius: 4px;
+   border: 1px solid #8080804a;
+}
+
+.imageNProd {
+   display: flex;
+   gap: 10px;
+}
+
+.savelater {
+   display: flex;
+   gap: 70px;
+   margin-left: 176px;
+}
+
+.productInfo {
+   display: flex;
+}
+
+.total {
+   width: 38%;
+   margin-left: 30px;
+}
+
+.promt {
+   display: flex;
+}
+
+.promt input {
+   width: 70%;
+}
+
+.promt button {
+   width: 30%;
+   background-color: black;
+   color: white;
+   transition: 0.7s;
+   cursor: pointer;
+}
+
+.promt button:hover {
+   letter-spacing: 2px;
+}
+
+.priceTotal {
+   display: flex;
+   justify-content: space-between;
+   line-height: 28px;
+   margin-top: 12px;
+
+}
+
+.proCart {
+   display: flex;
+   flex-direction: column;
+   width: 76%;
+}
+
+.priceDiscount {
+   text-align: end;
+}
+
+.checkout {
+   width: 100%;
+   margin-top: 20px;
+   font-size: 16px;
+   padding: 10px;
+   background: black;
+   color: white;
+   transition: 0.7s;
+   cursor: pointer;
+   border-radius: 4px;
+   letter-spacing: 2px;
+}
+
+.checkout:hover {
+   letter-spacing: 4px;
+}
+
+.pagination {
+   display: inline-block;
+   display: flex;
+   justify-content: center;
+   margin: 40px 0px 60px 0px;
+}
+
+.pagination a {
+   color: black;
+   float: left;
+   padding: 8px 16px;
+   text-decoration: none;
+   transition: 0.4s;
+   border-radius: 10px;
+}
+
+.pagination a.active {
+   background-color: #000000;
+   color: white;
+}
+
+.pagination a:hover:not(.active) {
+   background-color: #000000;
+   color: white;
+}
+
+#hr4 {
+   width: 250px;
+   margin: 20px 0px;
+}
+
+.savelater a {
+   transition: 0.5s;
+}
+
+.savelater a:hover {
+   text-decoration: underline;
+}
+
+.blue {
+   color: blue;
+}

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DemoWebsite</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- navigation Start -->
+    <header>
+        <nav>
+            <div class="container">
+                <div class="navBar">
+                    <div class="navbar">
+                        <h2><a href="index.html">Uship</a></h2>
+                        <h3><a href="index.html">Home</a></h3>
+                        <h3><a href="product.html">Product</a></h3>
+                        <h3><a href="contact.html">Contact</a></h3>
+                    </div>
+                    <div class="search">
+                        <input type="text" class="search_bar_item" placeholder="Search Products" value="">
+                        <button><a href="login.html">Login</a></button>
+                        <button><a href="register.html">Register</a></button>
+                        <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- cart info -->
+    <div class="cart">
+        <div class="container">
+            <div class="cartDesign">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <h2>My Cart</h2>
+            </div>
+            <hr id="hr1">
+            <div class="productInfo">
+                <div class="proCart">
+                    <div class="products">
+                        <div class="allProductHere">
+                            <div class="imageNProd">
+                                <div class="productImg">
+                                    <img src="images/beauty-1.png" alt="">
+                                </div>
+                                <div>
+                                    <h4>Face Serum</h4>
+                                    <p>Type: Women Face Serum</p>
+                                    <p>Quantity: 30ml</p>
+                                    <p>In Stock</p>
+                                </div>
+                            </div>
+                            <div class="productPrice">
+                                <h4>Each</h4>
+                                <h3>₹1200</h3>
+                            </div>
+                            <div class="productNumber">
+                                <h4>Quantity</h4>
+                                <select name="1" id="">
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                    <option value="">4</option>
+                                </select>
+                            </div>
+                            <div class="productTotal">
+                                <h4>Total</h4>
+                                <p>₹1200</p>
+                            </div>
+                        </div>
+                        <div class="savelater">
+                            <p><a href="">Edit</a></p>
+                            <p><a href="">Remove</a></p>
+                            <p><a href="">Move to Wishlist</a></p>
+                            <p><a href="">Save for Later</a></p>
+                        </div>
+                    </div>
+                    <hr id="hr3">
+                    <div class="products">
+                        <div class="allProductHere">
+                            <div class="imageNProd">
+                                <div class="productImg">
+                                    <img src="images/img-3.png" alt="">
+                                </div>
+                                <div>
+                                    <h4>Overhead Headphone</h4>
+                                    <p>Color: Mate Black</p>
+                                    <p>Size: Free</p>
+                                    <p>In Stock</p>
+                                </div>
+                            </div>
+                            <div class="productPrice">
+                                <h4>Each</h4>
+                                <h3>₹4800</h3>
+                            </div>
+                            <div class="productNumber">
+                                <h4>Quantity</h4>
+                                <select name="1" id="">
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                    <option value="">4</option>
+                                </select>
+                            </div>
+                            <div class="productTotal">
+                                <h4>Total</h4>
+                                <p>₹4800</p>
+                            </div>
+                        </div>
+                        <div class="savelater">
+                            <p><a href="">Edit</a></p>
+                            <p><a href="">Remove</a></p>
+                            <p><a href="">Move to Wishlist</a></p>
+                            <p><a href="">Save for Later</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="total">
+                    <div class="promotPart">
+                        <p>Enter Promo</p>
+                        <div class="promt">
+                            <input type="text" name="" id="" placeholder="Enter Promo">
+                            <button>Submit</button>
+                        </div>
+                    </div>
+                    <div class="priceTotal">
+                        <div>
+                            <p>Shipping Cost</p>
+                            <p>Discount</p>
+                            <p>Tax</p>
+                            <p>Price</p>
+                            <hr id="hr4">
+                            <h3>Estimated Total</h3>
+                            <hr id="hr4">
+                        </div>
+                        <div class="priceDiscount">
+                            <p>Free</p>
+                            <p>0%</p>
+                            <p>₹231</p>
+                            <p>₹6000</p>
+
+                            <hr id="hr4">
+                            <h3>₹6231</h3>
+                            <hr id="hr4">
+                        </div>
+                    </div>
+                    <button class="checkout">Buy Now</button>
+                </div>
+            </div>
+
+            <hr id="hr1">
+
+            <div class="pagination">
+                <a href="#">&laquo;</a>
+                <a class="active" href="#">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+                <a href="#">6</a>
+                <a href="#">&raquo;</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+        <div class="container">
+            <footer>
+                <div class="headFooter">
+                    <div class="contactInfo">
+                        <h3>Contact Information</h3>
+                        <p>xyz, NewYork, USA</p>
+                        <p>+0197 1354 6325</p>
+                        <p>1800 9966 4433</p>
+                    </div>
+                    <div class="customerSupport">
+                        <h3>Customer Service</h3>
+                        <li>FAQ</li>
+                        <li>Returns & Refund</li>
+                        <li>Terms & Condition</li>
+                        <li>Privacy Policy</li>
+                    </div>
+                    <div class="socialMedia">
+                        <h3>Social Media</h3>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Pinterest</li>
+                    </div>
+                    <div class="newsLetter">
+                        <h3>Subscribe Our Newsletter</h3>
+                        <p>Stay upto date with us <q>Subscribe now</q></p>
+                        <input placeholder="Enter Your Email"></input><br></br>
+                        <button class="general_button add_to_cart subscribebtn">Subscribe now</button>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <div class="cursor"></div>
+    <script src="main.js"></script>
+</body>
+
+</html>

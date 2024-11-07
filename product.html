@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DemoWebsite</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <div class="navBar">
+                    <div class="navbar">
+                        <h2><a href="index.html">Uship</a></h2>
+                        <h3><a href="index.html">Home</a></h3>
+                        <h3><a href="product.html">Product</a></h3>
+                        <h3><a href="contact.html">Contact</a></h3>
+                    </div>
+                    <div class="search">
+                        <input type="text" class="search_bar_item" placeholder="Search Products" value="">
+                        <button><a href="login.html">Login</a></button>
+                        <button><a href="register.html">Register</a></button>
+                        <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="productList">
+        <h1>Product Listing</h1>
+        <div class="container">
+            <div class="listOfProduct">
+                <div class="numProduct">
+                    <p>Total Products: 16 items</p>
+                </div>
+                <div class="productFilter">
+                    <p>Sort By</p>
+                    <select id="items" name="items">
+                        <option value="electronics">All</option>
+                        <a href="electronics.html">
+                            <option value="electronics">Electronics</option>
+                        </a>
+                        <option value="lifestyle">Lifestyle</option>
+                        <option value="beauty">Beauty</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="products">
+        <div class="container">
+            <div class="carts">
+                <div class="cartDetails">
+                    <div class="cartImg">
+                        <img src="images/img-1.png" alt="">
+                    </div>
+                    <div class="cartDetail">
+                        <h3>HP Pavilion 14</h3>
+                        <p>Laptop</p>
+                        <p class="price"><span class="mrp">MRP <del>₹79192</del></span> <span class="off"> 20%
+                                OFF</span></p>
+                        <h3>₹ 79192</h3>
+                    </div>
+                </div>
+                <div class="cartDetails">
+                    <div class="cartImg">
+                        <img src="images/img-2.png" alt="">
+                    </div>
+                    <div class="cartDetail">
+                        <h3>Samsung Galaxy Book2</h3>
+                        <p>Laptop</p>
+                        <p class="price"><span class="mrp">MRP <del>₹49490</del></span> <span class="off"> 40%
+                                OFF</span></p>
+                        <h3>₹ 29694</h3>
+                    </div>
+                </div>
+                <div class="cartDetails">
+                    <div class="cartImg">
+                        <img src="images/img-3.png" alt="">
+                    </div>
+                    <div class="cartDetail">
+                        <h3>Skull Candy</h3>
+                        <p>Wireless Headphone</p>
+                        <p class="price"><span class="mrp">MRP <del>₹28500</del></span> <span class="off"> 12%
+                                OFF</span></p>
+                        <h3>₹ 25080</h3>
+                    </div>
+                </div>
+                <div class="cartDetails">
+                    <div class="cartImg">
+                        <img src="images/img-4.png" alt="">
+                    </div>
+                    <div class="cartDetail">
+                        <h3>Dell 15 Laptop</h3>
+                        <p>Laptop</p>
+                        <p class="price"><span class="mrp">MRP <del>₹46000</del></span> <span class="off"> 50%
+                                OFF</span></p>
+                        <h3>₹ 23000</h3>
+                    </div>
+                </div>
+
+            </div>
+            <div class="carts">
+                <div class="cartDetails">
+                    <div class="cartImg">
+                        <img src="images/img-5.png" alt="">
+                    </div>
+                    <div class="cartDetail">
+                        <h3>Bose New QuietComfort</h3>
+                        <p>Wireless Headphone</p>
+                        <p class="price"><span class="mrp">MRP <del>₹27900</del></span> <span class="off"> 40%
+                                OFF</span></p>
+                        <h3>₹ 16740</h3>
+                    </div>
+                </div>
+                <div class="cartDetails">
+                    <div class="cartImg">
+                        <img src="images/img-6.png" alt="">
+                    </div>
+                    <div class="cartDetail">
+                        <h3>Sony WH-1000XM4</h3>
+                        <p>Wireless Headphone</p>
+                        <p class="price"><span class="mrp">MRP <del>₹22000</del></span> <span class="off"> 36%
+                                OFF</span></p>
+                        <h3>₹ 14080</h3>
+                    </div>
+                </div>
+                <div class="cartDetails">
+                    <div class="cartImg">
+                        <img src="images/img-7.png" alt="">
+                    </div>
+                    <div class="cartDetail">
+                        <h3>ASUS VivoBook 15</h3>
+                        <p>Laptop</p>
+                        <p class="price"><span class="mrp">MRP <del>₹18000</del></span> <span class="off"> 40%
+                                OFF</span></p>
+                        <h3>₹ 10800</h3>
+                    </div>
+                </div>
+                <div class="cartDetails btn">
+                    <div class="cartImg">
+                        <img src="images/img-8.png" alt="">
+                    </div>
+                    <div class="cartDetail">
+                        <h3>ZEBRONICS Thunder</h3>
+                        <p>Laptop</p>
+                        <p class="price"><span class="mrp">MRP <del>₹2000</del></span> <span class="off"> 48%
+                                OFF</span></p>
+                        <h3>₹ 1040</h3>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="carts">
+                <div class="cartDetails">
+                    <div class="cartImg">
+                        <img src="images/beauty-1.png" alt="">
+                    </div>
+                    <div class="cartDetail">
+                        <h3>AKSITARA FLORNECT</h3>
+                        <p>Face Serum</p>
+                        <p class="price"><span class="mrp">MRP <del>₹1500</del></span> <span class="off"> 50%
+                                OFF</span></p>
+                        <h3>₹ 750</h3>
+                    </div>
+                </div>
+                <div class="cartDetails">
+                    <div class="cartImg">
+                        <img src="images/beauty-2.png" alt="">
+                    </div>
+                    <div class="cartDetail">
+                        <h3>L'OREAL PARIS</h3>
+                        <p>Face Serum</p>
+                        <p class="price"><span class="mrp">MRP <del>₹600</del></span> <span class="off"> 30%
+                                OFF</span></p>
+                        <h3>₹ 420</h3>
+                    </div>
+                </div>
+                <div class="cartDetails">
+                    <div class="cartImg">
+                        <img src="images/beauty-3.png" alt="">
+                    </div>
+                    <div class="cartDetail">
+                        <h3>THE DERMA CO</h3>
+                        <p>Face Serum</p>
+                        <p class="price"><span class="mrp">MRP <del>₹300</del></span> <span class="off"> 10%
+                                OFF</span></p>
+                        <h3>₹ 270</h3>
+                    </div>
+                </div>
+                <div class="cartDetails btn">
+                    <div class="cartImg">
+                        <img src="images/beauty-4.png" alt="">
+                    </div>
+                    <div class="cartDetail">
+                        <h3>PLUM</h3>
+                        <p>Face Serum</p>
+                        <p class="price"><span class="mrp">MRP <del>₹200</del></span> <span class="off"> 10%
+                                OFF</span></p>
+                        <h3>₹ 180</h3>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="carts">
+                <div class="cartDetails">
+                    <div class="cartImg">
+                        <img src="images/lifestyle-1.png" alt="">
+                    </div>
+                    <div class="cartDetail">
+                        <h3>SYMBOL PREMIUM</h3>
+                        <p>Men's Wear</p>
+                        <p class="price"><span class="mrp">MRP <del>₹1600</del></span> <span class="off"> 30%
+                                OFF</span></p>
+                        <h3>₹ 1220</h3>
+                    </div>
+                </div>
+                <div class="cartDetails">
+                    <div class="cartImg">
+                        <img src="images/lifestyle-2.png" alt="">
+                    </div>
+                    <div class="cartDetail">
+                        <h3>INDO ERA</h3>
+                        <p>Women's Wear</p>
+                        <p class="price"><span class="mrp">MRP <del>₹1400</del></span> <span class="off"> 20%
+                                OFF</span></p>
+                        <h3>₹ 1120</h3>
+                    </div>
+                </div>
+                <div class="cartDetails">
+                    <div class="cartImg">
+                        <img src="images/lifestyle-3.png" alt="">
+                    </div>
+                    <div class="cartDetail">
+                        <h3>MAJESTIC MAN</h3>
+                        <p>Men's Wear</p>
+                        <p class="price"><span class="mrp">MRP <del>₹800</del></span> <span class="off"> 40%
+                                OFF</span></p>
+                        <h3>₹ 480</h3>
+                    </div>
+                </div>
+                <div class="cartDetails btn">
+                    <div class="cartImg">
+                        <img src="images/lifestyle-4.png" alt="">
+                    </div>
+                    <div class="cartDetail">
+                        <h3>RANGITA</h3>
+                        <p>Women's Wear</p>
+                        <p class="price"><span class="mrp">MRP <del>₹1200</del></span> <span class="off"> 30%
+                                OFF</span></p>
+                        <h3>₹ 840</h3>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <footer>
+                <div class="headFooter">
+                    <div class="contactInfo">
+                        <h3>Contact Information</h3>
+                        <p>xyz, NewYork, USA</p>
+                        <p>+0197 1354 6325</p>
+                        <p>1800 9966 4433</p>
+                    </div>
+                    <div class="customerSupport">
+                        <h3>Customer Service</h3>
+                        <li>FAQ</li>
+                        <li>Returns & Refund</li>
+                        <li>Terms & Condition</li>
+                        <li>Privacy Policy</li>
+                    </div>
+                    <div class="socialMedia">
+                        <h3>Social Media</h3>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Pinterest</li>
+                    </div>
+                    <div class="newsLetter">
+                        <h3>Subscribe Our Newsletter</h3>
+                        <p>Stay upto date with us <q>Subscribe now</q></p>
+                        <input placeholder="Enter Your Email"></input><br></br>
+                        <button class="general_button add_to_cart subscribebtn">Subscribe now</button>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <div class="cursor"></div>
+    <script src="main.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.cartDetails').onclick(function () {
+                $(this).addClass('blue');
+
+            })
+        })
+    </script>
+</body>
+
+</html>
